@@ -1,0 +1,82 @@
+<! DOCTYPE html>
+<html>
+<head>
+
+<title>  validacion de formularios</title>
+
+<link  href="interfazpagina.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="validacion.js"> </script>
+
+
+</head>
+
+
+
+<body>
+		<fieldset> 
+			<legend>  FORMULARIO</legend>
+			<form  id="formulario_frm" name="formulariovalid" action="formula.php" method="post">
+			
+			
+         
+			<label for="nombre">nombre: </label>
+			<input type="text" id="nombre" name="nombre_txt" class="cambio" />
+		    </br> </br>
+
+		     <label for="edad">edad: </label>
+			<input type="text" id="edad" name="edad_txt" class="cambio" />
+		    </br> </br>
+
+		    <label for="peso">peso: </label>
+			<input type="text" id="peso" name="peso_txt" class="cambio" />
+		    </br> </br>
+        
+
+            <label for="sexo">sexo: </label>
+			<input type="radio" id="M" name="sexo_rdo"  value="M" onclick="mostrar()" />  
+			<label for="M"> Masculino</label> 
+            
+            <input type="radio" id="F" name="sexo_rdo"  value="F"  checked="checked" onclick="ocultar()" /> 
+            <label for="F" > Femenino</label>  
+
+            </br> </br> 
+
+
+            <label for="altura_txt">altura: </label>
+			<input type="text" id="altura" name="altura_txt" class="cambio"    />
+		    </br> </br>
+
+
+		    <label for="cintura_txt">cintura: </label>
+			<input type="text" id="cintura" name="cintura_txt" class="cambio"   />
+		    </br> </br>
+
+
+		    <label for="cuello">cuello: </label>
+			<input type="text" id="cuello" name="cuello_txt" class="cambio"    />
+		    </br> </br>
+		
+
+	 <div id="oculto" style="display:none;">
+
+		    <label for="caderas">caderas: </label>
+			<input type="text" id="caderas" name="caderas_txt" class="cambio"  />
+	</div>	
+		    </br> </br>
+ <input  type="button" id="enviar" class="cambio" name="enviar_btn" value="Enviar " />
+ <input  type="button" id="limpiar" class="cambio" name="limpiar_btn" value="Limpiar" />
+
+
+
+
+		</fieldset>
+
+
+
+</body>
+
+
+
+
+</head>
+</html>
